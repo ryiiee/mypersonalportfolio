@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'personalportfolio/css/styles.css' %}">
+    <style>
+        /* Add your additional CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="th.jpg" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px;">
+            <h1>Riezel C. Remo </h1>
+            <h2>(rai)</h2>
+            <p>About Me</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi. I want money, a lot of money, more more money, like many many super duper ultra mega money hshshshshshs</p>
+            </div>
+        </section>
+
+        <section id="academics">
+            <div class="container">
+                <h2>Academics</h2>
+                <p>Showcase your academic achievements, research papers, projects, coursework, awards, and recognition.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p>Showcase your technical and soft skills using keywords, progress bars, or icons.</p>
+            </div>
+        </section>
+
+        <section id="experiences">
+            <div class="container">
+                <h2>Experiences</h2>
+                <p>Highlight your professional experiences, internships, and relevant work history.</p>
+            </div>
+        </section>
+
+        <!-- Additional Sections (Optional) -->
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <p>Briefly mention your educational background and relevant certifications.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <p>Include positive quotes or recommendations from clients, colleagues, or mentors.</p>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Share your thoughts, insights, or experiences related to your field.</p>
+            </div>
+        </section>
+
+        <section id="awards">
+            <div class="container">
+                <h2>Awards & Recognition</h2>
+                <p>Highlight any achievements or awards you've received.</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <div class="container">
+                <h2>Hobbies & Interests</h2>
+                <p>Briefly showcase your passions outside of work to add a personal touch.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Provide clear and easy ways for visitors to reach you:</p>
+                <ul>
+                    <li>Email: yourname@example.com</li>
+                    <li>Social Media:
+                        <a href="https://www.linkedin.com/in/yourname">LinkedIn</a>,
+                        <a href="https://twitter.com/yourname">Twitter</a>
+                    </li>
+                    <!-- You can add more social media links or a contact form here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
