@@ -13,13 +13,51 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: black;
         }
 
         header {
-            background-color: #333;
+            background-image: url("{% static 'C:\Users\Allyza\Desktop\mypersonalportfolio\personalportfolio\static\pink.gif' %}");
+            background-size: cover; /* Scale the background image to cover the entire header */
+            background-position: center; /* Center the background image */
             color: #fff;
-            text-align: center;
-            padding: 50px 0;
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            
+            max-width: 1200px;
+            margin-right: 20px; /* Margin for the right spacing */
+        }
+
+        h1 {
+            font-size: 5.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 3.0em;
+            margin-bottom: 10px;
+            color:rgb(255, 255, 255)
+        }
+
+        p {
+            font-size: 1em;
+            color:#fff
+        }
+
+
+        img {
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+        }
+
+        main {
+            padding: 20px;
         }
 
         section {
@@ -33,105 +71,189 @@
             margin: auto;
         }
 
-        h1 {
-            font-size: 2.5em;
+        .about-container {
+            background-color: #f10a57; /* Set background color for About Me section */
+            padding: 60px;
+            border-radius: 50px;
+            
         }
 
-        h2 {
-            font-size: 1.8em;
+        .acadamics-container {
+            background-color: #e69500; /* Set background color for About Me section */
+            padding: 60px;
+            border-radius: 50px;
         }
 
-        p {
-            font-size: 1.2em;
+        .skills-container {
+            background-image: url("{% static 'C:\Users\Allyza\Desktop\mypersonalportfolio\personalportfolio\static\Skills.png' %}");
+            border-radius: 1%;
+            width: 848x;
+            height: 900px;
+        }
+
+        .testimonials-container {
+            background-image: url("{% static 'C:\Users\Allyza\Desktop\mypersonalportfolio\personalportfolio\static\quote.gif' %}");
+            border-radius: 5%;
+            width: 1500x;
+            height: 300px;
+            font-size: 1.2em; /* Larger font size for paragraph */
+            line-height: 1.6; /* Adjust line height for better readability */
+            color: #666;
+            
+        }
+
+        table {
+            width: 100%; /* Set table width to 100% of its container */
+            border-collapse: collapse; /* Collapse table borders */
+        }
+
+        th, td {
+            padding: 10px; /* Add padding to table cells */
+            text-align: center; /* Center-align text in cells */
+        }
+
+        .column1 {
+            background-color: #ffffff; /* Background color for column 1 */
+        }
+
+        .column2 {
+            background-color: #ffffff; /* Background color for column 2 */
+        }
+
+        .hobbies-container {
+            text-align: center;
+        }
+
+        .hobbies-container h2 {
+            color: #ffffff; /* Dark text color for section heading */
+        }
+
+        .hobbies-container p {
+            font-size: 1.1em; /* Font size for paragraph text */
+            color: #ffffff; /* Text color for paragraphs */
+        }
+
+        .hobbies-container ul {
+            list-style-type: none; /* Remove default list bullet points */
+            padding: 0;
+        }
+
+        .hobbies-container ul li {
+            margin-bottom: 10px; /* Add spacing between list items */
+            font-size: 1.1em; /* Font size for paragraph text */
+            color: #ffffff;
+        }
+
+        .contact ul li {
+            margin-bottom: 10px; /* Add spacing between list items */
+            font-size: 1em; /* Font size for paragraph text */
+            color: #ffffff;
+        }
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            header {
+                justify-content: center; /* Center content on smaller screens */
+            }
+            .container {
+                margin-right: 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="th.jpg" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px;">
-            <h1>Riezel C. Remo </h1>
-            <h2>(rai)</h2>
-            <p>About Me</p>
+            <h1>Hi! I'm Riezel.</h1>
+            <h2>WELCOME TO MY PORTFOLIO!</h2>
+            <p></p>
         </div>
+        <img src="{% static 'C:\Users\Allyza\Desktop\mypersonalportfolio\personalportfolio\static\rairai.jpg' %}" alt="Profile Picture">
     </header>
 
     <main>
         <section id="about">
-            <div class="container">
+            <div class="container about-container">
                 <h2>About Me</h2>
-                <p>Hi. I want money, a lot of money, more more money, like many many super duper ultra mega money hshshshshshs</p>
+                <p>I'm a student at Palawan State University College of Sciences pursuing a</p>
+                <p>deegree in Information Technology. My journey in IT is fueled by curiosity and a passion for problem-solving.</p>
+           
             </div>
         </section>
 
         <section id="academics">
-            <div class="container">
-                <h2>Academics</h2>
-                <p>Showcase your academic achievements, research papers, projects, coursework, awards, and recognition.</p>
+            <div class="container acadamics-container">
+                <h2>Academics Achievements</h2>
+                <table>
+                    <tr>
+                        <th class="column1">EDUCATIONS</th>
+                        <th class="column2">HONORS AND RECOGNITIOON</th>
+                    </tr>
+                    <tr>
+                        <td class="column1">Bachelor of Arts in Animation (Expected Graduation: 2019-2020)
+                            Palawan Technological College Inc. <br/>
+                            High School Diploma
+                            Palawan Technological College Inc., Palawan (Grade 11-12) <br/>
+                            Sicsican National Highschool, Palawan (Grade 7-10) <br/>
+                            Elementary School Diploma <br/>
+                            Sicsican Elementary School, Palawan</td>
+                        <td class="column2">With Honors (Average Grade: 96.8)<br/>
+                            High School:<br/>
+                            Achieved perfect scores (100%) in animation projects.<br/>
+                            Delivered the Pledge of Loyalty during school ceremonies.<br/>
+                            Elementary School:<br/>
+                            Received academic medals and ribbons for outstanding performance.<br/>
+                            Active member of the Girl Scouts during Grade 6.</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
         <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <p>Showcase your technical and soft skills using keywords, progress bars, or icons.</p>
-            </div>
-        </section>
-
-        <section id="experiences">
-            <div class="container">
-                <h2>Experiences</h2>
-                <p>Highlight your professional experiences, internships, and relevant work history.</p>
+            <div class="container skills-container">
+                <h2></h2>
+                <p></p>
             </div>
         </section>
 
         <!-- Additional Sections (Optional) -->
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <p>Briefly mention your educational background and relevant certifications.</p>
-            </div>
-        </section>
 
         <section id="testimonials">
-            <div class="container">
-                <h2>Testimonials</h2>
-                <p>Include positive quotes or recommendations from clients, colleagues, or mentors.</p>
-            </div>
-        </section>
-
-        <section id="blog">
-            <div class="container">
-                <h2>Blog</h2>
-                <p>Share your thoughts, insights, or experiences related to your field.</p>
-            </div>
-        </section>
-
-        <section id="awards">
-            <div class="container">
-                <h2>Awards & Recognition</h2>
-                <p>Highlight any achievements or awards you've received.</p>
+            <div class="container testimonials-container">
+                <h2>Quote</h2>
+                <p>Technology is not just a tool. It can give learners a voice <br/>
+                    that they may not have had before, and it provides connections <br/>
+                    to resources and people that would otherwise be unavailable to them. <br/>
+                    Technology can level the playing field for all learners.</p>
             </div>
         </section>
 
         <section id="hobbies">
-            <div class="container">
+            <div class="container hobbies-container">
                 <h2>Hobbies & Interests</h2>
-                <p>Briefly showcase your passions outside of work to add a personal touch.</p>
+                <p>I enjoy a variety of hobbies in my free time:</p>
+                <ul>
+                    <li>Watching Movies</li>
+                    <li>Playing Video Games with Friends</li>
+                    <li>Playing Cards and Other Games</li>
+                    <li>Composing Music and Playing Guitar</li>
+                    <li>Enjoying Relaxing Sleep</li>
+                </ul>
+                <p>Life is about finding peace and joy. I believe in living life to the fullest and surrounding myself with positive and supportive people.</p>
             </div>
         </section>
 
         <section id="contact">
-            <div class="container">
+            <div class="container contact">
                 <h2>Contact</h2>
-                <p>Provide clear and easy ways for visitors to reach you:</p>
+                <p>Feel free to reach out to me:</p>
                 <ul>
-                    <li>Email: yourname@example.com</li>
+                    <li>Email: remoriezel@gmail.com</li>
                     <li>Social Media:
-                        <a href="https://www.linkedin.com/in/yourname">LinkedIn</a>,
-                        <a href="https://twitter.com/yourname">Twitter</a>
+                        <a href="https://www.instagram.com/_ryiiee?igsh=MmVlMjlkMTBhMg==">Instagram</a>,
+                        <a href="https://twitter.com/rzl_rmo?t=C4_-nqXYmcxMYqKvGgwpTQ&s=09">Twitter</a>,
+                        <a href="https://www.facebook.com/riezel.r?mibextid=ZbWKwL">Facebook</a>
                     </li>
-                    <!-- You can add more social media links or a contact form here -->
+
                 </ul>
             </div>
         </section>
